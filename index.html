@@ -23,6 +23,7 @@ img { max-width: 100%;
         <img src="Images/Endeavors Full Color Logo.png" alt="Endeavors Logo">
     </div>
   </div>
+  <hr></hr>
   <div class="header" style="font-weight: bolder">
       <h4>Aggregated Dashboards</h4>
   </div>
@@ -33,28 +34,28 @@ img { max-width: 100%;
     <div class="header">
         <h4>Program Specific Dashboards</h4>
     </div>
-    <a onclick="myAccFunc()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="msBtn">
+    <a onclick="myAccFuncMS()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="msBtn">
       Migrant Services <i class="fa fa-caret-down"></i>
     </a>
-    <div id="demoAcc" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+    <div id="MSAcc" class="w3-bar-block w3-hide w3-padding-large w3-medium">
       <a href="HSPRSCA.html" class="w3-bar-item w3-button">HSPRS</a>
       <a href="#" class="w3-bar-item w3-button">Migrant Wellness (ISAP)</a>
       <a href="#" class="w3-bar-item w3-button">Pecos Childrens Center</a>
       <a href="#" class="w3-bar-item w3-button">Emergency Family Staging Centers</a>
     </div>
-    <a onclick="myAccFunc()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="vsBtn">
+    <a onclick="myAccFuncVS()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="vsBtn">
         Veteran Support <i class="fa fa-caret-down"></i>
       </a>
-      <div id="demoAcc" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+      <div id="VSAcc" class="w3-bar-block w3-hide w3-padding-large w3-medium">
         <a href="#" class="w3-bar-item w3-button"></i>Veteran Support</a>
         <a href="#" class="w3-bar-item w3-button">Military Family Clinics</a>
         <a href="#" class="w3-bar-item w3-button">Supportive Services</a>
         <a href="#" class="w3-bar-item w3-button">Veteran Wellness</a>
       </div>
-    <a onclick="myAccFunc()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="esBtn">
+    <a onclick="myAccFuncES()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="esBtn">
         Emergency Services <i class="fa fa-caret-down"></i>
       </a>
-      <div id="demoAcc" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+      <div id="ESAcc" class="w3-bar-block w3-hide w3-padding-large w3-medium">
         <a href="#" class="w3-bar-item w3-button"></i>Emergency Services</a>
         <a href="#" class="w3-bar-item w3-button">Disaster Care Management</a>
         <a href="#" class="w3-bar-item w3-button">Rapid Deployment</a>
@@ -91,8 +92,24 @@ img { max-width: 100%;
 
 <script>
 // Accordion 
-function myAccFunc() {
-  var x = document.getElementById("demoAcc");
+function myAccFuncMS() {
+  var x = document.getElementById("MSAcc");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+function myAccFuncES() {
+  var x = document.getElementById("ESAcc");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+function myAccFuncVS() {
+  var x = document.getElementById("VSAcc");
   if (x.className.indexOf("w3-show") == -1) {
     x.className += " w3-show";
   } else {
