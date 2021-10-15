@@ -29,10 +29,11 @@ img { max-width: 100%;
   <div class="w3-padding-64 w3-large w3-text-black" style="font-weight:bold">
     <a href="#" class="w3-bar-item w3-button">Significant Incidents</a>
     <a href="#" class="w3-bar-item w3-button">Program Metrics</a>
+    <hr></hr>
     <div class="header">
         <h4>Program Specific Dashboards</h4>
     </div>
-    <a onclick="myAccFunc()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
+    <a onclick="myAccFunc()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="msBtn">
       Migrant Services <i class="fa fa-caret-down"></i>
     </a>
     <div id="demoAcc" class="w3-bar-block w3-hide w3-padding-large w3-medium">
@@ -41,7 +42,7 @@ img { max-width: 100%;
       <a href="#" class="w3-bar-item w3-button">Pecos Childrens Center</a>
       <a href="#" class="w3-bar-item w3-button">Emergency Family Staging Centers</a>
     </div>
-    <a onclick="myAccFunc()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
+    <a onclick="myAccFunc()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="vsBtn">
         Veteran Support <i class="fa fa-caret-down"></i>
       </a>
       <div id="demoAcc" class="w3-bar-block w3-hide w3-padding-large w3-medium">
@@ -50,7 +51,7 @@ img { max-width: 100%;
         <a href="#" class="w3-bar-item w3-button">Supportive Services</a>
         <a href="#" class="w3-bar-item w3-button">Veteran Wellness</a>
       </div>
-    <a onclick="myAccFunc()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
+    <a onclick="myAccFunc()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="esBtn">
         Emergency Services <i class="fa fa-caret-down"></i>
       </a>
       <div id="demoAcc" class="w3-bar-block w3-hide w3-padding-large w3-medium">
@@ -100,7 +101,9 @@ function myAccFunc() {
 }
 
 // Click on the "Jeans" link on page load to open the accordion for demo purposes
-document.getElementById("myBtn").click();
+document.getElementById("msBtn").click();
+document.getElementById("vsBtn").click();
+document.getElementById("esBtn").click();
 
 
 // Open and close sidebar
